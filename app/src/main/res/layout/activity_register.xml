@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="160dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textregister"
+        app:layout_constraintVertical_bias="0.055"
+        tools:layout_editor_absoluteX="28dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="370dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bck2"
+                android:drawableStart="@drawable/baseline_person_2_24"
+                android:drawablePadding="10dp"
+                android:hint="Nama Lengkap"
+                android:paddingLeft="10dp"
+                android:textSize="15sp">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Tanggal Lahir"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/tanggal_lahir"
+                android:layout_width="370dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bck2"
+                android:drawableStart="@drawable/baseline_person_2_24"
+                android:drawablePadding="10dp"
+                android:hint="Tanggal Lahir"
+                android:inputType="date"
+                android:paddingLeft="10dp"
+                android:textSize="15sp">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="370dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bck2"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:paddingLeft="10dp"
+                android:textSize="15sp">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Alamat"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/alamat"
+                android:layout_width="370dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bck2"
+                android:drawableStart="@drawable/baseline_person_2_24"
+                android:drawablePadding="10dp"
+                android:hint="Alamat"
+                android:paddingLeft="10dp"
+                android:textSize="15sp">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Jenis Kelamin"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/radio_grup"
+                android:layout_width="370dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bck2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_laki"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-Laki" />
+
+                <RadioButton
+                    android:id="@+id/radio_perempuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Perempuan" />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Jabatan"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/radio_jab"
+                android:layout_width="370dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bck2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_admin"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Admin" />
+
+                <RadioButton
+                    android:id="@+id/radio_karyawan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Karyawan" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="370dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bck2"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:paddingLeft="10dp"
+                android:textSize="15sp">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:backgroundTint="#808080"
+                android:text="REGISTER"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="130dp"
+                tools:layout_editor_absoluteY="581dp">
+
+            </Button>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Sudah Punya Akun?"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.807">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#0000FF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textview"
+        app:layout_constraintTop_toTopOf="@+id/textview">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
